@@ -14,7 +14,7 @@ for _ in range(n):
 row = 0
 col = 0
 area = 0
-for i in range(366):
+for i in range(1, 366):
     if schedule[i] == 0:
         area += row * col
         row = 0
