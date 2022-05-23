@@ -10,7 +10,7 @@ for j in range(5):
 
 
 def checkBingo():
-    global result, cnt
+    result = 0
     for i in bingo:
         if i.count(0) == 5:
             result += 1
@@ -47,7 +47,6 @@ for i in range(5):
             for l in range(5):
                 if num == bingo[k][l]:
                     bingo[k][l] = 0
-        result = 0
         if checkBingo() >= 3:
             bingotime.append(i * 5 + j + 1)
             break
